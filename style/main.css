@@ -4,12 +4,17 @@ html, body {
   padding: 0;
   background: #faf8ef;
   color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px; }
+  
+  font-family: "Chiller", Arial, sans-serif;
+  font-size: 26px; }
 
 body {
   margin: 80px 0; }
-
+h3 {
+  font-family: "Arial Narrow";
+  font-weight: normal;
+  font-size: 18px
+}
 input {
   display: inline-block;
   background: #8f7a66;
@@ -48,7 +53,9 @@ input {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-family: Chiller ;
+  font-size: 60px;
+  color: #df0004;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -299,11 +306,14 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  /*background: rgba(238, 228, 218, 0.35); */
+  background: rgba(0, 0, 0, 0.35);
+}
   .grid-cell:last-child {
     margin-right: 0; }
 
 .tile-container {
+
   position: absolute;
   z-index: 2; }
 
@@ -393,25 +403,32 @@ hr {
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
     background: #eee4da;
+    background: url('../tilesets/2.jpg'); 
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
+    background: url('../tilesets/4.jpg'); 
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
+    background: #f2b179;
+    background: url('../tilesets/8.jpg');  }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563; }
+    background: #f59563;
+    background: url('../tilesets/16.jpg'); }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f; }
+    background: #f67c5f; 
+    background: url('../tilesets/32.jpg');}
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b; }
+    background: #f65e3b; 
+    background: url('../tilesets/64.jpg');}
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
     background: #edcf72;
+    background: url('../tilesets/128.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -420,6 +437,7 @@ hr {
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
     background: #edcc61;
+    background: url('../tilesets/256.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -428,6 +446,7 @@ hr {
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
     background: #edc850;
+    background: url('../tilesets/512.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -436,6 +455,7 @@ hr {
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
     background: #edc53f;
+    background: url('../tilesets/1024.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -444,6 +464,7 @@ hr {
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
     background: #edc22e;
+    background: url('../tilesets/2048.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -567,7 +588,8 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+ /* background: #8f7a66;*/
+  background: #d0080b;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
